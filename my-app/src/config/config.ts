@@ -1,0 +1,1 @@
+export const localhost: string = 'https://geekhub-frontend-js-9.herokuapp.com/api'

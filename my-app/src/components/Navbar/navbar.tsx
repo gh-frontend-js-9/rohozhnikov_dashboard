@@ -17,7 +17,7 @@ export const Navbar: React.FC = () => {
                         </a>
                     </li>
                     <li className="sidebar__item">
-                        <a href="projects.html" className="sidebar__link">
+                        <a href="/project" className="sidebar__link">
                             <FontAwesomeIcon icon={ faBars } color ="#757da4" />
                         </a>
                     </li>
@@ -41,3 +41,5 @@ export const Navbar: React.FC = () => {
         </nav>
     )
 }
+
+export default Navbar;

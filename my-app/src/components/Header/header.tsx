@@ -1,6 +1,4 @@
 import React from 'react'
-import imgLogo from '../../assets/images/logo/logo.png'
-import imgAvatar from '../../assets/images/avatar/ava.png'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faSearch } from '@fortawesome/free-solid-svg-icons'
 import { faBell } from '@fortawesome/free-solid-svg-icons'
@@ -10,7 +8,7 @@ export const Header: React.FC = () => {
     return (
         <header className="header container">
             <div className="header__logo">
-                <a href="/"><img src={imgLogo} alt="logo"/></a>
+                <a href="/"><img src={require('../../assets/images/logo/logo.png')} alt='logo'/></a>
             </div>
             <div className="user header__user">
                 <div className="user__add">
@@ -25,7 +23,7 @@ export const Header: React.FC = () => {
                     <FontAwesomeIcon icon={ faBell } />
                 </div>
                 <div className="user__avatar">
-                    <img src={imgAvatar} alt="avatar" />
+                <img src={require('../../assets/images/avatar/ava.png')} alt='avatar'/>
                 </div>
                 <div className="user__chevron">
                     <FontAwesomeIcon icon={ faCheck }/>
@@ -34,3 +32,5 @@ export const Header: React.FC = () => {
 	    </header>
     )
 }
+
+export default Header;
